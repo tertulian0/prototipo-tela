@@ -1,0 +1,77 @@
+.cabecalho {
+  background-color: white;
+  box-shadow: var(--sombra-leve);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.conteiner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.navegacao {
+  display: none;
+  gap: 2rem;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .navegacao {
+    display: flex;
+  }
+}
+
+.navegacao li a {
+  color: var(--cor-texto-leve);
+  transition: color 0.3s;
+}
+
+.navegacao li a:hover,
+.navegacao li a.ativo {
+  color: var(--cor-primaria);
+  font-weight: 500;
+}
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.botaoEntrada {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.botaoEntrada:hover {
+  background-color: #15803d;
+}

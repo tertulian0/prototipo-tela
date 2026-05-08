@@ -1,0 +1,257 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  flex: 1;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.containerHero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.subtitulo {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.botaoPrimario {
+  background-color: white;
+  color: var(--cor-primaria);
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.botaoPrimario:hover {
+  background-color: #f0fdf4;
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-grande);
+}
+
+.secaoPesquisa {
+  max-width: 1280px;
+  margin: -3rem auto 3rem;
+  padding: 0 1rem;
+}
+
+.cartaoPesquisa {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--sombra-grande);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cartaoPesquisa {
+    grid-template-columns: 2fr 1fr 1fr auto;
+    align-items: end;
+  }
+}
+
+.grupoCampo {
+  display: flex;
+  flex-direction: column;
+}
+
+.rotulo {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.campo {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.botaoBuscar {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .botaoBuscar {
+    width: auto;
+  }
+}
+
+.botaoBuscar:hover {
+  background-color: #15803d;
+}
+
+.secaoQuadras {
+  max-width: 1280px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.tituloSecao {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--cor-texto);
+}
+
+.gridQuadras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cartaoQuadra {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--sombra-media);
+  transition: all 0.3s;
+}
+
+.cartaoQuadra:hover {
+  box-shadow: var(--sombra-grande);
+  transform: translateY(-4px);
+}
+
+.imagemQuadra {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #e5e7eb;
+}
+
+.conteudoCartao {
+  padding: 1.5rem;
+}
+
+.badgeEsporte {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.nomeQuadra {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.localizacao {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--cor-texto-leve);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.preco {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.botaoReservar {
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.botaoReservar:hover {
+  background-color: #1e3a8a;
+}
+
+.secaoCaracteristicas {
+  background-color: white;
+  padding: 4rem 1rem;
+}
+
+.containerCaracteristicas {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tituloCaracteristicas {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--cor-texto);
+}
+
+.gridCaracteristicas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.caracteristica {
+  text-align: center;
+}
+
+.iconeCaracteristica {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--cor-fundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.tituloCaracteristica {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.descricaoCaracteristica {
+  color: var(--cor-texto-leve);
+}

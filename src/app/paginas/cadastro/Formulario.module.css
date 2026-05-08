@@ -1,0 +1,123 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--sombra-grande);
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 0.95rem;
+  color: var(--cor-texto-leve);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.botao {
+  padding: 12px;
+  background-color: var(--cor-primaria);
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-media);
+}
+
+.rodape {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-texto-leve);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.link {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.botaoVoltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cor-primaria);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.botaoVoltar:hover {
+  color: var(--cor-secundaria);
+}

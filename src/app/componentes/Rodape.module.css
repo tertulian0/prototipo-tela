@@ -1,0 +1,22 @@
+.rodape {
+  background-color: #1f2937;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.conteiner {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.texto {
+  margin: 0;
+}
+
+.textoSecundario {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}

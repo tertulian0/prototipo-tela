@@ -1,0 +1,167 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-fundo);
+}
+
+.conteudo {
+  flex: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cor-texto-leve);
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumb a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.descricao {
+  color: var(--cor-texto-leve);
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+/* Sidebar Filtros */
+.filtros {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--sombra-media);
+  height: fit-content;
+}
+
+.tituloFiltros {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto);
+}
+
+.grupo {
+  margin-bottom: 1.5rem;
+}
+
+.rotulo {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.campo {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.botaoAplicar {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.botaoAplicar:hover {
+  background-color: #15803d;
+}
+/* Resultados */
+.imagemResultado {
+  width: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.resultadoItem {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  box-shadow: var(--sombra-leve);
+  transition: all 0.3s ease-out;
+  position: relative;
+  margin-top: 10px;
+}
+.resultadoItem:hover {
+  border-color: var(--cor-primaria);
+  background-color: #f0fdf4;
+  transition: all 0.3s;
+  transform: translateY(-2px);
+}
+.informacoesQuadra {
+  padding: 20px;
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: var(--cor-texto-leve);
+  left: 250px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.nomeQuadra {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+.dadosQuadra {
+  font-size: 0.875rem;
+  color: var(--cor-texto-leve);
+  margin-bottom: 0.25rem;
+}
+.botaoReservar{
+  width: 20%;
+  max-height: 40px;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
