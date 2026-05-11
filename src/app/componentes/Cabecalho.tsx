@@ -29,12 +29,12 @@ export function Cabecalho() {
               </Link>
             </li>
             <li>
-              <Link to="/dono" className={ehAtivo('/dono')}>
+              <Link to="/DashboardDono/dono" className={ehAtivo('/dashboardDono')}>
                 Área do Dono
               </Link>
             </li>
             <li>
-              <Link to="/admin" className={ehAtivo('/admin')}>
+              <Link to="/admin" className={ehAtivo('/admin')} onClick={() => navegar('/admin')}>
                 Admin
               </Link>
             </li>

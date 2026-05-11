@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Inicio } from './paginas/Inicio';
 import { Pesquisa } from './paginas/Pesquisa';
 import { Reserva } from './paginas/Reserva';
-import { DashboardDono } from './paginas/DashboardDono';
+import { DashboardDono } from './paginas/dashboardDono/DashboardDono';
 import { CadastroQuadra } from './paginas/CadastroQuadra';
 import { DashboardAdmin } from './paginas/DashboardAdmin';
 import { Login } from './paginas/login/Login';
@@ -25,7 +25,7 @@ const rotas = createBrowserRouter([
     element: <CadastroJogador />,
   },
   {
-    path: '/cadastro/dono',
+    path: '/cadastro',
     element: <CadastroDonoQuadra />,
   },
   {
@@ -45,7 +45,7 @@ const rotas = createBrowserRouter([
     element: <Reserva />,
   },
   {
-    path: '/dono',
+    path: '/dashboardDono',
     element: <DashboardDono />,
   },
   {
